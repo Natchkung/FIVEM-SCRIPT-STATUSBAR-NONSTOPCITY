@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=K2D:wght@500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'K2D', sans-serif;
+    overflow: hidden;
+    text-transform: uppercase;
+    font-size: small;
+}
+
+.timestamp {
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    color: rgb(255, 255, 255);
+}
+
+#timestamp {
+    color: rgb(255, 255, 255);
+    font-weight: 1500;
+}
+
+.md {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto
+}
+
+.ui {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0
+}
+
+.container {
+    position: absolute;
+    right: 1%;
+    width: 100vw;
+    height: 100vh;
+}
+
+.main {
+    position: absolute;
+    bottom: 1%;
+    right: 1%;
+    width: 350px;
+    height: 90px;
+    /* transform: skewY(6deg) */
+}
+
+@keyframes blik {
+    50% {
+        opacity: 0
+    }
+}
+
+.mainstatus {
+    position: relative;
+    width: 350px;
+    height: 100%;
+    background-image: url(https://media.discordapp.net/attachments/1042036560947851328/1062395911113818273/statusbarhud3x13x.png?width=1442&height=371);
+    background-position: center;
+    background-size: cover;
+}
+
+.main-playername {
+    position: absolute;
+    top: 0;
+    left: 37%;
+    width: 41%;
+    height: 25px
+}
+
+.contentname {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    /* box-shadow: 0 0 5px 2px red; */
+}
+
+.playername {
+    height: 90%;
+    width: 90%;
+    color: rgb(255, 255, 255);
+}
+
+.main-hp-box {
+    height: 25px;
+    width: 92%;
+    transform: skewX(-10deg);
+    position: absolute;
+    top: 26%;
+    left: 0%;
+}
+
+.hp-box {
+    height: 90%;
+    width: 90%;
+    transform: skewX(-20deg);
+    background-color: rgba(0, 0, 0, 0.637);
+    position: absolute;
+    top: 5px;
+    left: 4%;
+}
+
+@keyframes yile {
+    50% {
+        filter: drop-shadow(0 0 2px rgb(255, 255, 255))
+    }
+}
+
+@keyframes upp {
+    0% {
+        opacity: .1;
+        transform: skew(-45deg) translateX(-120px)
+    }
+    50% {
+        opacity: 1
+    }
+    100% {
+        opacity: .1;
+        transform: skew(-45deg) translateX(100px)
+    }
+}
+
+.str-detel {
+    position: absolute;
+    top: 64.5%;
+    left: 42.8%;
+    width: 2.2em;
+    height: 2.2em;
+    /* padding: 2px; */
+    float: left;
+    /* border: 3px solid rgb(255, 255, 255) !important;
+    box-shadow: -2px -5px 5px rgba(0, 0, 0, 0.137); */
+    background-color: rgb(0, 0, 0, 0.5);
+    /* overflow: hidden; */
+    transform: rotate(90deg);
+    /* border-radius: 50px; */
+    clip-path: polygon(49% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+.hug-detel {
+    position: absolute;
+    top: 64.5%;
+    left: 54.1%;
+    width: 2.2em;
+    height: 2.2em;
+    /* padding: 2px; */
+    float: left;
+    /* border: 3px solid rgb(255, 255, 255) !important;
+    box-shadow: -2px -5px 5px rgba(0, 0, 0, 0.137); */
+    background-color: rgb(0, 0, 0, 0.5);
+    /* overflow: hidden; */
+    transform: rotate(90deg);
+    /* border-radius: 50px; */
+    clip-path: polygon(49% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+.thg-detel {
+    position: absolute;
+    top: 64.5%;
+    left: 54.1%;
+    width: 2.2em;
+    height: 2.2em;
+    /* padding: 2px; */
+    float: left;
+    /* border: 3px solid rgb(255, 255, 255) !important;
+    box-shadow: -2px -5px 5px rgba(0, 0, 0, 0.137); */
+    background-color: rgb(0, 0, 0, 0.5);
+    /* overflow: hidden; */
+    transform: rotate(90deg);
+    /* border-radius: 50px; */
+    clip-path: polygon(49% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+.amr-detel {
+    position: absolute;
+    top: 35%;
+    right: 2%;
+    width: 3.1em;
+    height: 3.1em;
+    /* padding: 2px; */
+    float: left;
+    /* border: 3px solid rgb(255, 255, 255) !important;
+    box-shadow: -2px -5px 5px rgba(0, 0, 0, 0.137); */
+    background-color: rgb(0, 0, 0, 0.5);
+    /* overflow: hidden; */
+    transform: rotate(90deg);
+    /* border-radius: 50px; */
+    clip-path: polygon(49% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+.div-detel {
+    position: absolute;
+    top: 65%;
+    left: 31.1%;
+    width: 2.2em;
+    height: 2.2em;
+    /* padding: 2px; */
+    float: left;
+    /* border: 3px solid rgb(255, 255, 255) !important;
+    box-shadow: -2px -5px 5px rgba(0, 0, 0, 0.137); */
+    background-color: rgb(0, 0, 0, 0.5);
+    /* overflow: hidden; */
+    transform: rotate(90deg);
+    /* border-radius: 50px; */
+    clip-path: polygon(49% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+.shower-detel {
+    position: absolute;
+    top: 65%;
+    left: 65.4%;
+    width: 2.2em;
+    height: 2.2em;
+    /* padding: 2px; */
+    float: left;
+    /* border: 3px solid rgb(255, 255, 255) !important;
+    box-shadow: -2px -5px 5px rgba(0, 0, 0, 0.137); */
+    background-color: rgb(0, 0, 0, 0.5);
+    /* overflow: hidden; */
+    transform: rotate(90deg);
+    /* border-radius: 50px; */
+    clip-path: polygon(49% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+.sleep-detel {
+    position: absolute;
+    top: 64%;
+    left: 76.8%;
+    width: 2.2em;
+    height: 2.2em;
+    /* padding: 2px; */
+    float: left;
+    /* border: 3px solid rgb(255, 255, 255) !important;
+    box-shadow: -2px -5px 5px rgba(0, 0, 0, 0.137); */
+    background-color: rgb(0, 0, 0, 0.5);
+    /* overflow: hidden; */
+    transform: rotate(90deg);
+    /* border-radius: 50px; */
+    clip-path: polygon(49% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+.fa-heart {
+    color: #fff;
+    position: absolute;
+    transform: skewX(-25deg);
+    font-size: 14px;
+    right: 6px;
+    top: 20%;
+    z-index: 1000
+}
+
+#Hp {
+    position: absolute;
+    z-index: 100;
+    transform: skewX(20deg);
+    color: #fff;
+    right: 2rem;
+    top: 0%;
+}
+
+.idu {
+    position: absolute;
+    z-index: 100;
+    left: 10%;
+    top: 65%;
+    height: 22px;
+    width: 53px;
+    text-align: center;
+    border-radius: 3px;
+    font-size: 1.7vh;
+    background-color: rgb(0, 0, 0, 0.5);
+    color: rgb(255, 255, 255)
+}
+
+#tid {
+    font-size: 1.7vh;
+    color: rgb(255, 255, 255)
+}
+
+
+/* เกราะ */
+
+.fa-shield-alt {
+    top: 25%;
+    left: 25%;
+    font-size: 20px;
+    color: #fff;
+    transform: rotate(270deg);
+    position: absolute;
+    z-index: 100;
+}
+
+
+/* ว่ายน้ำ */
+
+.fa-swimmer {
+    top: 20%;
+    left: 20%;
+    font-size: 15px;
+    color: #fff;
+    transform: rotate(270deg);
+    position: absolute;
+    z-index: 100;
+}
+
+
+/* วิ่ง */
+
+.fa-bolt {
+    top: 25%;
+    left: 35%;
+    font-size: 15px;
+    color: #fff;
+    transform: rotate(270deg);
+    position: absolute;
+    z-index: 100;
+}
+
+
+/* อาหาร */
+
+.fa-hamburger {
+    top: 25%;
+    left: 25%;
+    font-size: 15px;
+    color: #fff;
+    transform: rotate(270deg);
+    position: absolute;
+    z-index: 100;
+}
+
+
+/* อาบน้ำ */
+
+.fa-shower {
+    top: 20%;
+    left: 25%;
+    font-size: 15px;
+    color: #fff;
+    transform: rotate(270deg);
+    position: absolute;
+    z-index: 100;
+}
+
+
+/* นอน */
+
+.fa-bed {
+    top: 25%;
+    left: 20%;
+    font-size: 15px;
+    color: #fff;
+    transform: rotate(270deg);
+    position: absolute;
+    z-index: 100;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0
+    }
+}
+
+@keyframes blinker-stop {
+    50% {
+        opacity: 1
+    }
+}
+
+#hpreal {
+    transition: 0.5s;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    background: rgb(0, 0, 0);
+}
+
+#hugreal {
+    transition: 0.5s;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    background: rgb(0, 0, 0);
+}
+
+#thgreal {
+    transition: 0.5s;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    background: rgb(0, 0, 0);
+}
+
+#amrreal {
+    transition: 0.5s;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    background: rgb(0, 0, 0);
+}
+
+#strreal {
+    transition: 0.5s;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    background: rgb(0, 0, 0);
+    /* background: rgba(255,144,0, .75) */
+}
+
+#divreal {
+    transition: 0.5s;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    background: rgb(0, 0, 0);
+}
+
+#sleepreal {
+    transition: 0.5s;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    background: rgb(0, 0, 0);
+}
+
+.am {
+    position: absolute;
+    border-radius: 5px;
+    top: 2px;
+    width: 90%;
+    height: 50%
+}
+
+#amreal {
+    transition: 0.5s;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    background: rgb(0, 0, 0);
+}
+
+#showerreal {
+    transition: 0.5s;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    background: rgb(0, 0, 0);
+}
